@@ -11,8 +11,152 @@
     <title>Immigration Application Screening</title>
   </head>
   <body>
-    <header class="header"></header>
-    <main class="content"></main>
-    <footer class="footer"></footer>
+    <div class="page">
+      <header class="header">
+        <div class="header__content">
+          <div class="header__item">
+            <img src="" alt="" class="header__logo" />
+            <h1 class="header__title">
+              Official Document Verification Scanner
+            </h1>
+          </div>
+          <p class="subtitle">
+            Verify the authenticity of official documents using advanced
+            security feature detection
+          </p>
+        </div>
+      </header>
+      <main class="content">
+        <section class="passport__doc">
+          <div class="left-panel">
+            <div class="card">
+              <h2 class="card-title">
+                <i class="fas fa-camera"></i> Document Scan
+              </h2>
+
+              <div class="tabs">
+                <div class="tab active" data-tab="upload">Upload Document</div>
+                <div class="tab" data-tab="webcam">Use Webcam</div>
+              </div>
+
+              <div class="tab-content active" id="upload-tab">
+                <div class="upload-area" id="dropArea">
+                  <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                  <p class="upload-text">
+                    Drag & drop your document here or <span>browse files</span>
+                  </p>
+                  <input
+                    type="file"
+                    id="fileInput"
+                    accept="image/*"
+                    style="display: none"
+                  />
+                </div>
+
+                <div class="document-preview" id="documentPreview">
+                  <i
+                    class="fas fa-file-image"
+                    style="font-size: 3rem; color: #ccc"
+                  ></i>
+                </div>
+
+                <div class="tab-content" id="webcam-tab">
+                  <div class="document-preview" id="webcamPreview">
+                    <i
+                      class="fas fa-camera"
+                      style="font-size: 3rem; color: #ccc"
+                    ></i>
+                  </div>
+                  <button id="startWebcam">
+                    <i class="fas fa-video"></i> Start Camera
+                  </button>
+                  <button
+                    id="captureBtn"
+                    style="display: none; margin-top: 10px"
+                  >
+                    <i class="fas fa-camera"></i> Capture Document
+                  </button>
+                </div>
+
+                <div class="form-group">
+                  <label for="documentType">Document Type</label>
+                  <select id="documentType">
+                    <option value="">Select document type</option>
+                    <option value="passport">Passport</option>
+                    <option value="id">ID Card</option>
+                    <option value="license">Driver's License</option>
+                    <option value="certificate">Certificate</option>
+                    <option value="other">Other Official Document</option>
+                  </select>
+                </div>
+
+                <button class="scan-btn" id="scanBtn">
+                  <i class="fas fa-search"></i> Scan Document
+                </button>
+
+                <div class="loading" id="loading">
+                  <div class="spinner"></div>
+                  <p>Analyzing document security features...</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <h2 class="card-title">
+                  <i class="fas fa-info-circle"></i> Security Features We Verify
+                </h2>
+
+                <div class="feature-list">
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <h3>Holograms & Foil Elements</h3>
+                      <p>Detection of reflective security elements</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <h3>Microprinting</h3>
+                      <p>Verification of tiny text that appears as a line</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <h3>UV Features</h3>
+                      <p>Detection of elements visible under UV light</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <h3>Security Threads</h3>
+                      <p>Identification of embedded security threads</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <h3>Color-Shifting Ink</h3>
+                      <p>
+                        Verification of ink that changes color at different
+                        angles
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p>Official Document Verification System © 2025</p>
+      </footer>
+    </div>
   </body>
 </html>
