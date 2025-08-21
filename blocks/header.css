@@ -3,3 +3,29 @@
   display: flex;
   justify-content: center;
 }
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  width: 200px;
+  padding: 0 287px;
+}
+
+.header__title {
+  margin: 0;
+}
+
+.header__subtitle {
+  margin: 0;
+}
